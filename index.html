@@ -8,44 +8,86 @@
 
     <style>
         /*Commenting in CSS*/
+
+        * {
+            border: 1px dashed black;
+
+        }
+
         body {
             color: blue;
             background-color: yellow;
+            font-size: 12px;
         }
 
         p {
             color: darkgreen
         }
 
-        .main-paragraph hover: {
-            background: magenta
+        .first-article {
+            width 50%;
         }
 
-        a[href="../portfolio/about.html"] {background-color:darkgreen}
-        a[href="../portfolio/index.html"] {background-color:darkgray}
-        a:visited {background-color:pink}
+        .main-paragraph {
+            width: 33%;
+        }
+
+        .main-paragraph:hover {
+            background-color: orange;
+            font-size: 2rem;
+            width: 6rem;
+        }
+
+        .second-paragraph {
+            background-color: red;
+        }
+
+        a[href="../portfolio/about.html"] {
+            background-color: darkgreen;
+        }
+
+        a[href="../portfolio/index.html"] {
+            background-color: darkgray;
+        }
+
+        a:hover {
+            background-color: pink;
+        }
+
+        .icon {
+            margin: 25px solid red;
+            border: 10px solid black;
+            width:277px;
+            height:182px;
+        }
+
+        .pressure { margin: 25px solid darkgreen;
+            border: 1em solid blue;}
 
     </style>
 
 </head>
 
 <body>
-    <h1>Website Title</h1>
-
-    <p class="main-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed odio non libero congue
-        commodo. Morbi porta
-        dignissim urna, cursus vestibulum elit commodo a. Donec vehicula vulputate ex, id tincidunt metus ornare at.
-        Donec gravida, mauris eget dignissim rutrum, est elit vestibulum neque, in condimentum velit nisl et velit.
-        Phasellus quis efficitur quam. Quisque facilisis justo id dictum eleifend. Proin odio ipsum, posuere a elit
-        vehicula, viverra dapibus nulla. Proin commodo velit vel massa maximus, facilisis hendrerit sapien sodales.
-        Vivamus pellentesque ut ante vitae consectetur. Donec mattis, justo id porta viverra, odio lorem maximus ligula,
-        in tempor risus mauris vitae eros.</p>
-
+    <h1>Intro to CSS</h1>
+    <article class="first-article">
+        <p class="main-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed odio non libero
+            congue
+            commodo. Morbi porta
+            dignissim urna, cursus vestibulum elit commodo a. Donec vehicula vulputate ex, id tincidunt metus ornare at.
+            Donec gravida, mauris eget dignissim rutrum, est elit vestibulum neque, in condimentum velit nisl et velit.
+            Phasellus quis efficitur quam. Quisque facilisis justo id dictum eleifend. Proin odio ipsum, posuere a elit
+            vehicula, viverra dapibus nulla. Proin commodo velit vel massa maximus, facilisis hendrerit sapien sodales.
+            Vivamus pellentesque ut ante vitae consectetur. Donec mattis, justo id porta viverra, odio lorem maximus
+            ligula,
+            in tempor risus mauris vitae eros.</p>
+    </article>
     <p class="second-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed odio non libero congue
         commodo. Morbi porta
         dignissim urna, cursus vestibulum elit commodo a. Donec vehicula vulputate ex, id tincidunt metus ornare at.
         Donec gravida, mauris eget dignissim rutrum, est elit vestibulum neque, in condimentum velit nisl et velit.
     </p>
+
 
     <div>
         <ul>
@@ -57,9 +99,14 @@
 
     </div>
     <ul>
-        <li><a href="../portfolio/index.html"> My First Site</a></li>
-        <li><a href="../portfolio/about.html"> My First Site</a></li>
+        <li><a href="../portfolio/index.html">Portfolio</a></li>
+        <li><a href="../portfolio/about.html"> About</a></li>
     </ul>
+
+    <img class = "icon" src="images/icons8-creek-100.png" alt="creek">
+    <img class = "icon" src="images/icons8-alps-100.png" alt="alps">
+    <img class = "pressure" src="images/pcooker.jpg" alt="pressure cooker">
+
 </body>
 
 </html>
