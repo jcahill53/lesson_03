@@ -1,0 +1,60 @@
+* {
+    border: 1px dashed black;
+
+}
+
+body {
+    color: blue;
+    background-color: yellow;
+    font-size: 12px;
+}
+
+p {
+    color: darkgreen
+}
+
+.first-article {
+    width 50%;
+}
+
+.main-paragraph {
+    width: 33%;
+}
+
+.main-paragraph:hover {
+    background-color: orange;
+    font-size: 2rem;
+    width: 6rem;
+}
+
+.second-paragraph {
+    background-color: red;
+}
+
+a[href="../portfolio/about.html"] {
+    background-color: darkgreen;
+}
+
+a[href="../portfolio/index.html"] {
+    background-color: darkgray;
+}
+
+a:hover {
+    background-color: pink;
+}
+
+.icon {
+    background-color: pink;
+    margin: 12px;
+    border: 1px solid black;
+    padding: 1em;
+    width: 277px;
+    height: 182px;
+}
+
+.pressure {
+    background-color: pink;
+    margin: 12px;
+    border: 1px solid blue;
+    padding: 1em;
+}
